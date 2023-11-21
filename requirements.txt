@@ -1,0 +1,2 @@
+airium==0.2.5
+colormap==1.0.4
