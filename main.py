@@ -1,10 +1,11 @@
 from card_definitions import *
-from dividers import generate_output 
+from dividers import generate_output
 
-CARDS_TO_MAKE = ([]
-#     + [CORE_SET_ENCOUNTERS[8]]
-#     + [CHALLENGE_MISSIONS[0], CHALLENGE_MISSIONS[4]]
-#     + [EOTE_MISSIONS[3], EOTE_ENCOUNTERS[7]]
+CARDS_TO_MAKE = (
+    []
+    #     + [CORE_SET_ENCOUNTERS[8]]
+    #     + [CHALLENGE_MISSIONS[0], CHALLENGE_MISSIONS[4]]
+    #     + [EOTE_MISSIONS[3], EOTE_ENCOUNTERS[7]]
     + NOTZ_MISSIONS
     + NOTZ_ENCOUNTERS
     + RTNOTZ_MISSIONS
@@ -25,6 +26,8 @@ CARDS_TO_MAKE = ([]
     + TCU_ENCOUNTERS
     + RTTCU_MISSIONS
     + RTTCU_ENCOUNTERS
+    + TDE_MISSIONS
+    + TDE_ENCOUNTERS
     + EOTE_MISSIONS
     + EOTE_ENCOUNTERS
     + SCARLET_MISSIONS
@@ -38,8 +41,10 @@ CARDS_TO_MAKE = ([]
     + DARK_MATTER_ENCOUNTERS
 )
 
+
 def main_arkham():
     generate_output(CARDS_TO_MAKE, "icons/teutonic.ttf", "tabbed_dividers.html")
+
 
 if __name__ == "__main__":
     main_arkham()

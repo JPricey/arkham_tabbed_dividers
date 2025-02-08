@@ -953,6 +953,46 @@ ABYSS = make_set(
 )
 
 ###############################################################################
+# The Dream Eaters
+###############################################################################
+
+TDE_COLOR = "#8674a8"
+TDE_ICON = "tde/tde.webp"
+TDE_MISSIONS = make_set(
+    [
+        Card("I-A: Beyond the Gates of Sleep", "tde/m1a.webp", TDE_COLOR, TDE_ICON),
+        Card("I-B: Waking Nightmare", "tde/m1b.webp", TDE_COLOR, TDE_ICON),
+
+        Card("II-A: The Search for Kadath", "tde/m2a.webp", TDE_COLOR, TDE_ICON),
+        Card("II-B: A Thousand Shapes of Horror", "tde/m2b.webp", TDE_COLOR, TDE_ICON),
+
+        Card("III-A: Dark Side of the Moon", "tde/m3a.webp", TDE_COLOR, TDE_ICON),
+        Card("III-B: Point of No Return", "tde/m3b.webp", TDE_COLOR, TDE_ICON),
+
+        Card("IV-A: Where the Gods Dwell", "tde/m4a.webp", TDE_COLOR, TDE_ICON),
+        Card("IV-B: Weaver of the Cosmos", "tde/m4b.webp", TDE_COLOR, TDE_ICON),
+    ]
+)
+
+TDE_ENCOUNTERS = make_set(
+    [
+        Card("Agents of Nyarlathotep", "tde/e_aon.webp", TDE_COLOR, TDE_ICON),
+        Card("Zoogs", "tde/e_z.webp", TDE_COLOR, TDE_ICON),
+        Card("Dreamer’s Curse", "tde/e_dc.webp", TDE_COLOR, TDE_ICON),
+        Card("Dreamlands", "tde/e_d.webp", TDE_COLOR, TDE_ICON),
+        Card("Corsairs", "tde/e_c.webp", TDE_COLOR, TDE_ICON),
+        Card("Whispers of Hypnos", "tde/e_woh.webp", TDE_COLOR, TDE_ICON),
+        Card("Dark Cult", "tde/e_dc.webp", TDE_COLOR, TDE_ICON),
+        Card("Agents of Atlach-Nacha", "tde/e_aoan.webp", TDE_COLOR, TDE_ICON),
+        Card("Spiders", "tde/e_s.webp", TDE_COLOR, TDE_ICON),
+        Card("Creatures of the Underworld", "tde/e_cotu.webp", TDE_COLOR, TDE_ICON),
+        Card("Merging Realities", "tde/e_mr.webp", TDE_COLOR, TDE_ICON),
+        Card("Descent into the Pitch", "tde/e_ditp.webp", TDE_COLOR, TDE_ICON),
+        Card("Terror of the Vale", "tde/e_totv.webp", TDE_COLOR, TDE_ICON),
+    ]
+)
+
+###############################################################################
 # Dark Matter
 ###############################################################################
 
