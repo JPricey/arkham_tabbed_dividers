@@ -8,6 +8,10 @@ from airium import Airium
 # Card sleeves are 63.5mm x 88mm
 CARD_WIDTH_MM = 90
 CARD_HEIGHT_MM = 66
+
+# CARD_WIDTH_MM = 94
+# CARD_HEIGHT_MM = 75
+
 TAB_HEIGHT_MM = 7
 CARD_TOT_HEIGHT_MM = CARD_HEIGHT_MM + TAB_HEIGHT_MM
 PX_PER_MM = 3.7795275591
@@ -19,9 +23,11 @@ SVG_BASE_START_MM = (SVG_EXTRA_MARGIN_MM, SVG_EXTRA_MARGIN_MM)
 BEETWEEN_CARD_MARGIN_MM = 2.2
 
 TAB_OVERLAP_MM = 0.5
+# TAB_OVERLAP_MM = 0.0
 TAB_DIAGONAL_MM = 2
 
 # COLOUR HELPERS
+
 
 def hex_to_rgb(hex):
     hex = hex.lstrip("#")
@@ -45,10 +51,13 @@ def darken_color(hex, factor=0.1):
 def get_tab_bottom_width(num_tabs):
     return (CARD_WIDTH_MM + (num_tabs - 1) * TAB_OVERLAP_MM) * 1.0 / num_tabs
 
+
 def icon_path(path):
     return f"icons/{path}"
 
+
 assert TAB_OVERLAP_MM <= TAB_DIAGONAL_MM
+
 
 def styleize(style_dict):
     def fix_key(key):
@@ -62,6 +71,7 @@ def styleize(style_dict):
 def divide_chunks(l, n):
     for i in range(0, len(l), n):
         yield l[i : i + n]
+
 
 a = Airium()
 a("<!DOCTYPE html>")
@@ -79,10 +89,12 @@ card_div_style = dict(
     break_inside="avoid",
 )
 
+
 def get_tab_bottom_x(tab_number, num_tabs):
     tab_bottom_width = get_tab_bottom_width(num_tabs)
     tab_bottom_x = tab_number * (tab_bottom_width - TAB_OVERLAP_MM)
     return tab_bottom_x
+
 
 def make_tab_points(num_tabs, tab_number):
     tab_bottom_width = get_tab_bottom_width(num_tabs)
@@ -139,6 +151,7 @@ def build_card(data):
     )
     placer_div_style = dict(
         display="flex",
+        # Comment out these centers to make text tab headings
         align_items="center",
         justify_content="center",
         background="r",
@@ -156,15 +169,20 @@ def build_card(data):
         height=f"{CARD_HEIGHT_MM}mm",
     )
 
-    back_img_style = dict(
-        height=f"{CARD_HEIGHT_MM * 0.8}mm", max_width="80%", opacity=0.15
-    )
-
     back_placer_div_style = dict(
         display="flex",
         align_items="center",
         justify_content="center",
         height=f"{CARD_HEIGHT_MM}mm",
+    )
+
+    back_img_container_style = dict(
+        height=f"{CARD_HEIGHT_MM * 0.8}mm",
+        width="80%",
+    )
+
+    back_img_style = dict(
+        object_fit="contain", height="100%", width="100%", opacity=0.15
     )
 
     text_placer_div_style = dict(
@@ -193,11 +211,16 @@ def build_card(data):
             with a.div(
                 style=styleize(placer_div_style),
             ):
-                a.img(
-                    src=icon_path(card.tab_icon),
-                    alt="BROKEN!!",
-                    style=styleize(img_style),
-                )
+                # a.div(style=styleize(dict(width=f"{TAB_DIAGONAL_MM + 0.5}mm")))
+                if card.tab_icon:
+                    a.img(
+                        src=icon_path(card.tab_icon),
+                        alt="BROKEN!!",
+                        style=styleize(img_style),
+                    )
+                if card.tab_text:
+                    with a.span(style=styleize(dict(font_size="20px"))):
+                        a("&nbsp" + card.tab_text)
 
         if card.back_icon:
             with a.div(
@@ -206,11 +229,14 @@ def build_card(data):
                 with a.div(
                     style=styleize(back_placer_div_style),
                 ):
-                    a.img(
-                        src=icon_path(card.back_icon),
-                        alt="BROKEN!!",
-                        style=styleize(back_img_style),
-                    )
+                    with a.div(
+                        style=styleize(back_img_container_style),
+                    ):
+                        a.img(
+                            src=icon_path(card.back_icon),
+                            alt="BROKEN!!",
+                            style=styleize(back_img_style),
+                        )
         with a.div(
             style=styleize(background_icon_div_style),
         ):
@@ -222,7 +248,7 @@ def build_card(data):
                 a.div(style=styleize(dict(flex_grow=4)))
 
 
-def generate_output(cards_to_make, filename):
+def generate_output(cards_to_make, font_path, filename):
     with a.html():
         with a.head():
             a.meta(charset="utf-8")
@@ -231,7 +257,11 @@ def generate_output(cards_to_make, filename):
                     f"""
                 @font-face {{
                     font-family: "birmingham";
-                    src: url("icons/teutonic.ttf");
+                    src: url({font_path});
+                }}
+                * {{
+                    margin: 0;
+                    padding: 0;
                 }}
                 body {{
                     font-family: birmingham;
@@ -240,7 +270,7 @@ def generate_output(cards_to_make, filename):
                 }}
                 @media print {{
                     @page {{
-                        margin-top: 25mm;
+                        margin-top: 0.25in;
                     }}
 
                     div {{
