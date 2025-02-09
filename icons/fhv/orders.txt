@@ -1,0 +1,77 @@
+0
+Prelude: Welcome to Hemlock Vale!
+Gather all cards from the following encounter sets: The First Day,
+Day of Rest, Residents, and The Vale. These sets are indicated by the
+following icons:
+
+1
+Written In Rock
+Gather all cards from the following encounter sets: Written in Rock,
+Horrors in the Rock, Refractions, Chilling Cold, and Ghouls. These sets
+are indicated by the following icons:
+
+123,residents
+
+2
+Scenario: Hemlock House
+Gather all cards from the following encounter sets: Hemlock House,
+Agents of the Colour, Blight, Fire!, Transfiguration, Locked Doors, and
+Rats. These sets are indicated by the following icons:
+
+123,residents
+
+3
+Scenario: The Silent Heath
+Gather all cards from the following encounter sets: The Silent
+Heath, Agents of the Colour, Blight, Horrors in the Rock, Refractions,
+Transfiguration, and Striking Fear. These sets are indicated by the
+following icons:
+
+123,residents
+
+4
+Scenario: The Lost Sister
+Gather all cards from the following encounter sets: The Lost Sister,
+Blight, Horrors in the Rock, Mutations, and Myconids. These sets are
+indicated by the following icons
+
+5
+Scenario: The Thing in the Depths
+Gather all cards from the following encounter sets: The Thing
+in the Depths, Blight, The Forest, and Mutations. These sets are
+indicated by the following icons:
+
+6
+Scenario: The Twisted Hollow
+Gather all cards from the following encounter sets: The First Day, The
+Twisted Hollow, The Forest, and Myconids. These sets are indicated by
+the following icons
+
+7
+Prelude: Dawn of the Second Day
+Gather all cards from the following encounter sets: The Second Day,
+Day of Rain, Residents, and The Vale. These sets are indicated by the
+following icons:
+
+8
+Prelude: The Second Evening
+Hierlooms
+
+Scenario: The Longest Night
+Gather all cards from the following encounter sets: The Second Day,
+The Longest Night, Blight, Transfiguration, Fire!, Chilling Cold, The
+Midnight Masks, and Striking Fear. These sets are indicated by the
+following icons:
+
+Prelude: Dawn of the Final Day
+Gather all cards from the following encounter sets: The Final Day, Day
+of the Feast, Agents of the Colour, Residents, and The Vale. These sets are
+indicated by the following icons:
+
+Prelude: The Final Evening
+Gather all cards from the following encounter sets: The Final Day, Day
+of the Feast, Residents, and The Vale. These sets are indicated by the
+following icons:
+
+Scenario: Fate of the Vale
+

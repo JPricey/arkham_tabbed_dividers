@@ -1,0 +1,73 @@
+Scenario I: The Pit of Despair
+Creatures of the Deep
+Flooded Caverns
+Rising Tide
+Shattered Memories
+
+Scenario II: The Vanishing of Elina Harper
+Agents of Dagon
+Fog over Innsmouth
+The Locals
+
+Scenario III: In Too Deep
+Creatures of the Deep
+Rising Tide
+Syzygy
+The Locals
+
+Scenario IV: Devil Reef
+Agents of Hydra
+Creatures of the Deep
+Flooded Caverns
+Malfunction
+Rising Tide
+
+Scenario V: Horror in High Gear
+Fog over Innsmouth
+Malfunction
+Shattered Memories
+
+Scenario VI: A Light in the Fog
+Creatures of the Deep
+Flooded Caverns
+Rising Tide
+Syzygy
+
+Scenario VII: The Lair of Dagon
+Agents of Dagon
+Flooded Caverns
+Syzygy
+Dark Cult
+
+Scenario VIII: Into the Maelstrom
+Agents of Hydra
+Creatures of the Deep
+Flooded Caverns
+Shattered Memories
+Syzygy
+
+
+Creatures of the Deep
+Flooded Caverns
+Rising Tide
+Shattered Memories
+Agents of Dagon
+Fog over Innsmouth
+The Locals
+Syzygy
+Agents of Hydra
+Malfunction
+
+
+8 + 10 = 18
+good.
+
+
+I: The Pit of Despair
+II: The Vanishing of Elina Harper
+III: In Too Deep
+IV: Devil Reef
+V: Horror in High Gear
+VI: A Light in the Fog
+VII: The Lair of Dagon
+VIII: Into the Maelstrom

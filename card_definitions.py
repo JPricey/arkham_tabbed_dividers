@@ -555,6 +555,81 @@ RTTCU_ENCOUNTERS = make_set(
 )
 
 ###############################################################################
+# The Dream Eaters
+###############################################################################
+
+TDE_COLOR = "#8674a8"
+TDE_ICON = "tde/tde.webp"
+TDE_MISSIONS = make_set(
+    [
+        Card("I-A: Beyond the Gates of Sleep", "tde/m1a.webp", TDE_COLOR, TDE_ICON),
+        Card("I-B: Waking Nightmare", "tde/m1b.webp", TDE_COLOR, TDE_ICON),
+
+        Card("II-A: The Search for Kadath", "tde/m2a.webp", TDE_COLOR, TDE_ICON),
+        Card("II-B: A Thousand Shapes of Horror", "tde/m2b.webp", TDE_COLOR, TDE_ICON),
+
+        Card("III-A: Dark Side of the Moon", "tde/m3a.webp", TDE_COLOR, TDE_ICON),
+        Card("III-B: Point of No Return", "tde/m3b.webp", TDE_COLOR, TDE_ICON),
+
+        Card("IV-A: Where the Gods Dwell", "tde/m4a.webp", TDE_COLOR, TDE_ICON),
+        Card("IV-B: Weaver of the Cosmos", "tde/m4b.webp", TDE_COLOR, TDE_ICON),
+    ]
+)
+
+TDE_ENCOUNTERS = make_set(
+    [
+        Card("Agents of Nyarlathotep", "tde/e_aon.webp", TDE_COLOR, TDE_ICON),
+        Card("Zoogs", "tde/e_z.webp", TDE_COLOR, TDE_ICON),
+        Card("Dreamer’s Curse", "tde/e_dc.webp", TDE_COLOR, TDE_ICON),
+        Card("Dreamlands", "tde/e_d.webp", TDE_COLOR, TDE_ICON),
+        Card("Corsairs", "tde/e_c.webp", TDE_COLOR, TDE_ICON),
+        Card("Whispers of Hypnos", "tde/e_woh.webp", TDE_COLOR, TDE_ICON),
+        Card("Dark Cult", "tde/e_dc.webp", TDE_COLOR, TDE_ICON),
+        Card("Agents of Atlach-Nacha", "tde/e_aoan.webp", TDE_COLOR, TDE_ICON),
+        Card("Spiders", "tde/e_s.webp", TDE_COLOR, TDE_ICON),
+        Card("Creatures of the Underworld", "tde/e_cotu.webp", TDE_COLOR, TDE_ICON),
+        Card("Merging Realities", "tde/e_mr.webp", TDE_COLOR, TDE_ICON),
+        Card("Descent into the Pitch", "tde/e_ditp.webp", TDE_COLOR, TDE_ICON),
+        Card("Terror of the Vale", "tde/e_totv.webp", TDE_COLOR, TDE_ICON),
+    ]
+)
+
+###############################################################################
+# The Innsmouth Conspiracy
+###############################################################################
+
+TIC_COLOR = "#7ca688"
+TIC_ICON = "tic/tic.webp"
+TIC_MISSIONS = make_set(
+    [
+        Card("I: The Pit of Despair", "tic/the_pit_of_despair.webp", TIC_COLOR, TIC_ICON),
+        Card("II: The Vanishing of Elina Harper", "tic/the_vanishing_of_elina_harper.webp", TIC_COLOR, TIC_ICON),
+        Card("III: In Too Deep", "tic/in_too_deep.webp", TIC_COLOR, TIC_ICON),
+        Card("IV: Devil Reef", "tic/devil_reef.webp", TIC_COLOR, TIC_ICON),
+        Card("V: Horror in High Gear", "tic/horror_in_high_gear.webp", TIC_COLOR, TIC_ICON),
+        Card("VI: A Light in the Fog", "tic/a_light_in_the_fog.webp", TIC_COLOR, TIC_ICON),
+        Card("VII: The Lair of Dagon", "tic/the_lair_of_dagon.webp", TIC_COLOR, TIC_ICON),
+        Card("VIII: Into the Maelstrom", "tic/into_the_maelstrom.webp", TIC_COLOR, TIC_ICON),
+    ]
+)
+
+TIC_ENCOUNTERS = make_set(
+    [
+        Card("Creatures of the Deep", "tic/creatures_of_the_deep.webp", TIC_COLOR, TIC_ICON),
+        Card("Flooded Caverns", "tic/flooded_caverns.webp", TIC_COLOR, TIC_ICON),
+        Card("Rising Tide", "tic/rising_tide.webp", TIC_COLOR, TIC_ICON),
+        Card("Shattered Memories", "tic/shattered_memories.webp", TIC_COLOR, TIC_ICON),
+        Card("Agents of Dagon", "tic/agents_of_dagon.webp", TIC_COLOR, TIC_ICON),
+        Card("Fog over Innsmouth", "tic/fog_over_innsmouth.webp", TIC_COLOR, TIC_ICON),
+        Card("The Locals", "tic/the_locals.webp", TIC_COLOR, TIC_ICON),
+        Card("Syzygy", "tic/syzygy.webp", TIC_COLOR, TIC_ICON),
+        Card("Agents of Hydra", "tic/agents_of_hydra.webp", TIC_COLOR, TIC_ICON),
+        Card("Malfunction", "tic/malfunction.webp", TIC_COLOR, TIC_ICON),
+    ]
+)
+
+
+###############################################################################
 # Edge of the Earth:
 ###############################################################################
 
@@ -950,46 +1025,6 @@ ABYSS = make_set(
         ),
     ],
     num_tabs=3,
-)
-
-###############################################################################
-# The Dream Eaters
-###############################################################################
-
-TDE_COLOR = "#8674a8"
-TDE_ICON = "tde/tde.webp"
-TDE_MISSIONS = make_set(
-    [
-        Card("I-A: Beyond the Gates of Sleep", "tde/m1a.webp", TDE_COLOR, TDE_ICON),
-        Card("I-B: Waking Nightmare", "tde/m1b.webp", TDE_COLOR, TDE_ICON),
-
-        Card("II-A: The Search for Kadath", "tde/m2a.webp", TDE_COLOR, TDE_ICON),
-        Card("II-B: A Thousand Shapes of Horror", "tde/m2b.webp", TDE_COLOR, TDE_ICON),
-
-        Card("III-A: Dark Side of the Moon", "tde/m3a.webp", TDE_COLOR, TDE_ICON),
-        Card("III-B: Point of No Return", "tde/m3b.webp", TDE_COLOR, TDE_ICON),
-
-        Card("IV-A: Where the Gods Dwell", "tde/m4a.webp", TDE_COLOR, TDE_ICON),
-        Card("IV-B: Weaver of the Cosmos", "tde/m4b.webp", TDE_COLOR, TDE_ICON),
-    ]
-)
-
-TDE_ENCOUNTERS = make_set(
-    [
-        Card("Agents of Nyarlathotep", "tde/e_aon.webp", TDE_COLOR, TDE_ICON),
-        Card("Zoogs", "tde/e_z.webp", TDE_COLOR, TDE_ICON),
-        Card("Dreamer’s Curse", "tde/e_dc.webp", TDE_COLOR, TDE_ICON),
-        Card("Dreamlands", "tde/e_d.webp", TDE_COLOR, TDE_ICON),
-        Card("Corsairs", "tde/e_c.webp", TDE_COLOR, TDE_ICON),
-        Card("Whispers of Hypnos", "tde/e_woh.webp", TDE_COLOR, TDE_ICON),
-        Card("Dark Cult", "tde/e_dc.webp", TDE_COLOR, TDE_ICON),
-        Card("Agents of Atlach-Nacha", "tde/e_aoan.webp", TDE_COLOR, TDE_ICON),
-        Card("Spiders", "tde/e_s.webp", TDE_COLOR, TDE_ICON),
-        Card("Creatures of the Underworld", "tde/e_cotu.webp", TDE_COLOR, TDE_ICON),
-        Card("Merging Realities", "tde/e_mr.webp", TDE_COLOR, TDE_ICON),
-        Card("Descent into the Pitch", "tde/e_ditp.webp", TDE_COLOR, TDE_ICON),
-        Card("Terror of the Vale", "tde/e_totv.webp", TDE_COLOR, TDE_ICON),
-    ]
 )
 
 ###############################################################################
