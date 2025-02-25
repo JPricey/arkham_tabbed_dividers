@@ -341,6 +341,38 @@ RTCARCOSA_ENCOUNTERS = make_set(
 )
 
 ###############################################################################
+# Dark Matter
+###############################################################################
+
+DARK_MATTER_COLOR = "#957DAD"
+DM_ICON = "dm/m1.svg"
+DARK_MATTER_MISSIONS = make_set(
+    [
+        Card("I: The Tatterdemalion", "dm/m1.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("II: Electric Nightmare", "dm/m2.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("IIIa: Lost Quantum", "dm/m3.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("IIIb: In the Shadow of Earth", "dm/m4.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("IIIc: Strange Moons", "dm/m5.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("IV: The Machine in Yellow", "dm/m6.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("V: Fragment of Carcosa", "dm/m7.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("VI: Starfall", "dm/m8.svg", DARK_MATTER_COLOR, DM_ICON),
+    ]
+)
+
+DARK_MATTER_ENCOUNTERS = make_set(
+    [
+        Card("Anachronism", "dm/e1.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("Dark Past", "dm/e2.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("Artificial Intelligence", "dm/e3.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("Endtimes", "dm/e4.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("The Boogeyman", "dm/e5.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("Deep Space", "dm/e6.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("Interstellar Predators", "dm/e7.svg", DARK_MATTER_COLOR, DM_ICON),
+        Card("Hastur's Gaze", "dm/e8.svg", DARK_MATTER_COLOR, DM_ICON),
+    ]
+)
+
+###############################################################################
 # The Forgotten Age
 ###############################################################################
 
@@ -843,6 +875,51 @@ SCARLET_ENCOUNTERS = make_set(
 )
 
 ###############################################################################
+# The Feast of Hemlock Vale
+###############################################################################
+
+FHV_COLOR = "#e39b5f"
+FHV_ICON = "fhv/fhv.webp"
+
+FHV_MISSIONS = make_set(
+    [
+        Card("The First Day", "fhv/m_tfd.webp", FHV_COLOR, FHV_ICON),
+        Card("The Second Day", "fhv/m_tsd.webp", FHV_COLOR, FHV_ICON),
+        Card("The Final Day", "fhv/m_ttd.webp", FHV_COLOR, FHV_ICON),
+        Card("Written in Rock", "fhv/m_wir.webp", FHV_COLOR, FHV_ICON),
+        Card("Hemlock House", "fhv/m_hemlock_house.webp", FHV_COLOR, FHV_ICON),
+        Card("The Silent Heath", "fhv/m_tsh.webp", FHV_COLOR, FHV_ICON),
+        Card("The Lost Sister", "fhv/m_tls.webp", FHV_COLOR, FHV_ICON),
+        Card("The Thing in the Depths", "fhv/m_ttitd.webp", FHV_COLOR, FHV_ICON),
+        Card("The Twisted Hollow", "fhv/m_tth.webp", FHV_COLOR, FHV_ICON),
+        Card("The Longest Night", "fhv/m_tln.webp", FHV_COLOR, FHV_ICON),
+        Card("Fate of the Vale", "fhv/m_fate_of_the_vale.webp", FHV_COLOR, FHV_ICON),
+    ] 
+)
+
+FHV_ENCOUNTERS = make_set(
+    [
+        Card("The Vale", "fhv/e_the_vale.webp", FHV_COLOR, FHV_ICON,),
+        Card("Residents", "fhv/e_residents.webp", FHV_COLOR, FHV_ICON,),
+        Card("Day of Rest", "fhv/e_dor.webp", FHV_COLOR, FHV_ICON,),
+        Card("Day of Rain", "fhv/e_day_of_rain.webp", FHV_COLOR, FHV_ICON,),
+        Card("Day of the Feast", "fhv/e_day_of_the_feast.webp", FHV_COLOR, FHV_ICON,),
+        Card("Horrors in the Rock", "fhv/e_hitr.webp", FHV_COLOR, FHV_ICON,),
+        Card("Refractions", "fhv/e_refractions.webp", FHV_COLOR, FHV_ICON,),
+        Card("Agents of the Colour", "fhv/e_aotc.webp", FHV_COLOR, FHV_ICON,),
+        Card("Blight", "fhv/e_blight.webp", FHV_COLOR, FHV_ICON,),
+        Card("Fire!", "fhv/e_fire.webp", FHV_COLOR, FHV_ICON,),
+        Card("Transfiguration", "fhv/e_transfiguration.webp", FHV_COLOR, FHV_ICON,),
+        Card("Mutations", "fhv/e_mutations.webp", FHV_COLOR, FHV_ICON,),
+        Card("Myconids", "fhv/e_myconids.webp", FHV_COLOR, FHV_ICON,),
+        Card("The Forest", "fhv/e_the_forest.webp", FHV_COLOR, FHV_ICON,),
+    ]
+)
+
+
+
+
+###############################################################################
 # Challenge Missions
 ###############################################################################
 
@@ -1028,33 +1105,60 @@ ABYSS = make_set(
 )
 
 ###############################################################################
-# Dark Matter
+# The Blob that Ate Everything
 ###############################################################################
 
-DARK_MATTER_COLOR = "#957DAD"
-DM_ICON = "dm/m1.svg"
-DARK_MATTER_MISSIONS = make_set(
+BLOB_COLOR = "#b1e37b"
+BLOB_ICON = "standalones/blob/set.svg"
+BLOB = make_set(
     [
-        Card("I: The Tatterdemalion", "dm/m1.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("II: Electric Nightmare", "dm/m2.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("IIIa: Lost Quantum", "dm/m3.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("IIIb: In the Shadow of Earth", "dm/m4.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("IIIc: Strange Moons", "dm/m5.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("IV: The Machine in Yellow", "dm/m6.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("V: Fragment of Carcosa", "dm/m7.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("VI: Starfall", "dm/m8.svg", DARK_MATTER_COLOR, DM_ICON),
-    ]
+        Card(
+            "The Blob that Ate Everything",
+            "standalones/blob/set.svg",
+            BLOB_COLOR,
+            BLOB_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/blob/encounter.svg",
+            BLOB_COLOR,
+            BLOB_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/blob/mi_go_incursion.svg",
+            BLOB_COLOR,
+            BLOB_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/blob/single.svg",
+            BLOB_COLOR,
+            BLOB_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/blob/multi.svg",
+            BLOB_COLOR,
+            BLOB_ICON,
+        ),
+    num_tabs=3,
 )
 
-DARK_MATTER_ENCOUNTERS = make_set(
+###############################################################################
+# The Midwinter Gala
+###############################################################################
+
+GALA_COLOR = "#e3aa7b"
+GALA_ICON = "standalones/the_midwinter_gala/set.svg"
+GALA = make_set(
     [
-        Card("Anachronism", "dm/e1.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("Dark Past", "dm/e2.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("Artificial Intelligence", "dm/e3.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("Endtimes", "dm/e4.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("The Boogeyman", "dm/e5.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("Deep Space", "dm/e6.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("Interstellar Predators", "dm/e7.svg", DARK_MATTER_COLOR, DM_ICON),
-        Card("Hastur's Gaze", "dm/e8.svg", DARK_MATTER_COLOR, DM_ICON),
-    ]
+        Card(
+            "The Midwinter Gala",
+            "standalones/the_midwinter_gala/set.svg",
+            GALA_COLOR,
+            GALA_ICON,
+        ),
+    num_tabs=2,
 )
+
