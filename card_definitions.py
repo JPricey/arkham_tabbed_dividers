@@ -657,6 +657,7 @@ TIC_ENCOUNTERS = make_set(
         Card("Syzygy", "tic/syzygy.webp", TIC_COLOR, TIC_ICON),
         Card("Agents of Hydra", "tic/agents_of_hydra.webp", TIC_COLOR, TIC_ICON),
         Card("Malfunction", "tic/malfunction.webp", TIC_COLOR, TIC_ICON),
+        Card("Keys", "notz/notz-g870.svg", TIC_COLOR, TIC_ICON),
     ]
 )
 
@@ -901,6 +902,7 @@ FHV_ENCOUNTERS = make_set(
     [
         Card("The Vale", "fhv/e_the_vale.webp", FHV_COLOR, FHV_ICON,),
         Card("Residents", "fhv/e_residents.webp", FHV_COLOR, FHV_ICON,),
+        Card("Hierlooms", "fhv/hierlooms.webp", FHV_COLOR, FHV_ICON,),
         Card("Day of Rest", "fhv/e_dor.webp", FHV_COLOR, FHV_ICON,),
         Card("Day of Rain", "fhv/e_day_of_rain.webp", FHV_COLOR, FHV_ICON,),
         Card("Day of the Feast", "fhv/e_day_of_the_feast.webp", FHV_COLOR, FHV_ICON,),
@@ -915,8 +917,6 @@ FHV_ENCOUNTERS = make_set(
         Card("The Forest", "fhv/e_the_forest.webp", FHV_COLOR, FHV_ICON,),
     ]
 )
-
-
 
 
 ###############################################################################
@@ -1109,41 +1109,158 @@ ABYSS = make_set(
 ###############################################################################
 
 BLOB_COLOR = "#b1e37b"
-BLOB_ICON = "standalones/blob/set.svg"
+BLOB_ICON = "standalones/blob/set.webp"
 BLOB = make_set(
     [
         Card(
             "The Blob that Ate Everything",
-            "standalones/blob/set.svg",
+            "standalones/blob/set.webp",
             BLOB_COLOR,
             BLOB_ICON,
         ),
         Card(
             "Encounters",
-            "standalones/blob/encounter.svg",
+            "standalones/blob/encounters.webp",
             BLOB_COLOR,
             BLOB_ICON,
         ),
         Card(
-            "Encounters",
-            "standalones/blob/mi_go_incursion.svg",
+            "Mi-Go Incursion",
+            "standalones/blob/mi_go_incursion.webp",
             BLOB_COLOR,
             BLOB_ICON,
         ),
         Card(
-            "Encounters",
-            "standalones/blob/single.svg",
+            "Single Group",
+            "standalones/blob/single.webp",
             BLOB_COLOR,
             BLOB_ICON,
         ),
         Card(
-            "Encounters",
-            "standalones/blob/multi.svg",
+            "Epic Multiplayer",
+            "standalones/blob/multi.webp",
             BLOB_COLOR,
             BLOB_ICON,
         ),
+    ],
     num_tabs=3,
 )
+
+###############################################################################
+# War of the Outer Gods
+###############################################################################
+
+WAR_COLOR = "#84cbd9"
+WAR_ICON = "standalones/wotog/set.webp"
+WAR = make_set(
+    [
+        Card(
+            "War of the Outer Gods",
+            "standalones/wotog/set.webp",
+            WAR_COLOR,
+            WAR_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/wotog/encounters.webp",
+            WAR_COLOR,
+            WAR_ICON,
+        ),
+        Card(
+            "Children of Paradise",
+            "standalones/wotog/children.webp",
+            WAR_COLOR,
+            WAR_ICON,
+        ),
+        Card(
+            "Swarm of Assimilation",
+            "standalones/wotog/swarm.webp",
+            WAR_COLOR,
+            WAR_ICON,
+        ),
+        Card(
+            "Death of Stars",
+            "standalones/wotog/death.webp",
+            WAR_COLOR,
+            WAR_ICON,
+        ),
+    ],
+    num_tabs=3,
+)
+
+###############################################################################
+# Machinations Through Time
+###############################################################################
+
+MACH_COLOR = "#7f89c7"
+MACH_ICON = "standalones/machinations_through_time/set.webp"
+MACH = make_set(
+    [
+        Card(
+            "Machinations Through Time",
+            "standalones/machinations_through_time/set.webp",
+            MACH_COLOR,
+            MACH_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/machinations_through_time/encounters.webp",
+            MACH_COLOR,
+            MACH_ICON,
+        ),
+        Card(
+            "Single Group",
+            "standalones/blob/single.webp",
+            MACH_COLOR,
+            MACH_ICON,
+        ),
+        Card(
+            "Epic Multiplayer",
+            "standalones/blob/multi.webp",
+            MACH_COLOR,
+            MACH_ICON,
+        ),
+    ],
+    num_tabs=4,
+)
+
+###############################################################################
+# Fortune and Folly
+###############################################################################
+
+FORTUNE_COLOR = "#c77fa5"
+FORTUNE_ICON = "standalones/fortune_and_folly/set.webp"
+FORTUNE = make_set(
+    [
+        Card(
+            "Fortune and Folly",
+            "standalones/fortune_and_folly/set.webp",
+            FORTUNE_COLOR,
+            FORTUNE_ICON,
+        ),
+        Card(
+            "Encounters",
+            "standalones/fortune_and_folly/encounters.webp",
+            FORTUNE_COLOR,
+            FORTUNE_ICON,
+        ),
+        Card(
+            "Fortune's Chosen",
+            "standalones/fortune_and_folly/fortune.webp",
+            FORTUNE_COLOR,
+            FORTUNE_ICON,
+        ),
+        Card(
+            "Plan in Shambles",
+            "standalones/fortune_and_folly/shambles.webp",
+            FORTUNE_COLOR,
+            FORTUNE_ICON,
+        ),
+    ],
+    num_tabs=4,
+)
+
+
 
 ###############################################################################
 # The Midwinter Gala
@@ -1159,6 +1276,7 @@ GALA = make_set(
             GALA_COLOR,
             GALA_ICON,
         ),
+    ],
     num_tabs=2,
 )
 
